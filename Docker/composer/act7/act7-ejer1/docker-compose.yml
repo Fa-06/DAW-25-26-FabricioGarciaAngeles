@@ -1,0 +1,13 @@
+services:
+  frontend:
+    container_name: temperaturas-frontend 
+    image: avelinopef/temperaturas_front
+    restart: always
+    ports:
+      - 81:3000
+    depends_on:
+      - backend    
+  backend:
+    container_name: temperaturas-backend
+    image: avelinopef/temperaturas_back
+    restart: always

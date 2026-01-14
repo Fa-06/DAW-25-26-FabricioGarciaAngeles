@@ -1,0 +1,15 @@
+services:
+  app:
+    container_name: guestbook
+    image: iesgn/guestbook
+    restart: always
+    ports:
+      - 4200:5000
+  db:
+    container_name: redis
+    image: redis
+    restart: always
+    volumes:
+      - redis:/data
+volumes:
+  redis:
