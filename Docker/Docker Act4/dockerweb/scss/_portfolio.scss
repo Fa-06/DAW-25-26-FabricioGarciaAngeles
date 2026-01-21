@@ -1,0 +1,17 @@
+@use "globales" as *;
+#portfolio{
+    background-color: $color-fondo-portfolio;
+   
+    h3{
+        @include titulo;
+    }  
+    div{
+        gap: 1rem;
+        .imagen{
+            picture, source, img{
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+} 

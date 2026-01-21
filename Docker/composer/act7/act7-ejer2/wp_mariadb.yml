@@ -1,0 +1,28 @@
+services:
+  wordpress:
+    container_name: contenedor_wp
+    image: wordpress
+    restart: always
+    environment:
+      WORDPRESS_DB_HOST: contenedor_mariadb
+      WORDPRESS_DB_USER: admin
+      WORDPRESS_DB_PASSWORD: naranco23
+      WORDPRESS_DB_NAME: bbdd_wp
+    ports:
+      - 80:80
+    volumes:
+      - datos_wp:/var/www/html
+  db:
+    container_name: contenedor_mariadb
+    image: mariadb
+    restart: always
+    environment:
+      MYSQL_DATABASE: bbdd_wp
+      MYSQL_USER: admin
+      MYSQL_PASSWORD: naranco23
+      MYSQL_ROOT_PASSWORD: asdasd  
+    volumes:
+      - datos_mariadb:/var/lib/mysql
+volumes:
+    datos_wp:
+    datos_mariadb:

@@ -1,0 +1,15 @@
+@use "globales" as *;
+@use "reset";
+@use 'rejilla';
+@use 'cabecera';
+@use 'contacto';
+@use 'about';
+@use 'servicios';
+@use 'portfolio';
+
+
+*{
+    font-family: $tipografia;  
+} 
+
+ 

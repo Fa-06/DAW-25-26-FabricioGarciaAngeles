@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mi Portfolio de Fotografía</title>
+
+  <link rel="stylesheet" type="text/css" href="css/estilos.css">
+  <script src="https://kit.fontawesome.com/0555e0eb25.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+<script src="js/menu.js"></script>
+
+</head>
+
+<body>
+  <div id="wrapper">
+    <header id="cabecera" class="contenedor col-big-12">
+      <a class="logo col-big-3 col-small-12" href="#">Mi Lente Viajera</a>
+      <i class="fa-solid fa-bars hidden-big col-small-12" onclick="desplegar()"></i>
+      <nav class="contenedor col-big-9 col-small-12">
+        <ul class="contenedor col-big-12 col-small-12">
+            <li class="col-big-1 hidden-small"><a href="#">Inicio</a></li>
+            <li class="col-big-3 hidden-small"><a href="#contacto">Conversemos</a></li>
+            <li class="col-big-3 hidden-small"><a href="#acerca-de">Mi filosofía </a></li>
+            <li class="col-big-4 hidden-small"><a href="#servicios">A qué me dedico</a></li>
+            <li class="col-big-1 hidden-small"><a href="#portfolio">Expediciones</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="contacto" class="contenedor">
+      <h3 class="col-big-12 hidden-small">Conversemos sobre tu Proyecto</h3>
+      <p class="col-big-12 col-small-12">
+        ¿Tienes una idea para una expedición, un reportaje o necesitas material visual impactante?
+        No dudes en contactarme. Estoy siempre listo para un nuevo desafío.
+      </p>
+
+      <form id="formulario-contacto" class="col-big-8 margin-big-2 contenedor col-small-10 margin-small-1">
+        <input type="email" placeholder="Nombre" class="col-big-10 margin-big-1 col-small-10 margin-small-1">
+        <input type="email" placeholder="Email" class="col-big-10 margin-big-1 col-small-10 margin-small-1">
+        <input type="text" placeholder="Tipo de Proyecto" class="col-big-10 margin-big-1 col-small-10 margin-small-1">
+        <textarea rows="4" placeholder="Cuéntame tu idea..."
+          class="col-big-10 margin-big-1 col-small-10 margin-small-1"></textarea>
+        <button type="submit" class="col-big-6 margin-big-3 col-small-10 margin-small-1">Enviar Solicitud</button>
+      </form>
+    </section>
+
+    <section id="about" class="contenedor col-big-12">
+      <div class="col-big-6 col-small-12 imagen">
+        <picture>
+          <source srcset="img/sobre_mi_small.jpg" media="(max-width:924px)">
+          <source srcset="img/sobre_mi.jpg" media="(min-width:924px)">
+          <img src="img/sobre_mi.jpg" alt="">
+        </picture>
+      </div>
+        <div id="texto-about" class="col-big-6">
+          <h3>Mi Filosofía</h3>
+          <p>Soy un fotógrafo apasionado por explorar y documentar la belleza cruda del mundo. Mi objetivo es que cada
+            imagen transporte al espectador al lugar exacto de la toma, sintiendo la brisa, el frío o la calidez del
+            momento. He dedicado años a perfeccionar la técnica y la visión, buscando siempre la luz perfecta.</p>
+          <p>Mis viajes me han llevado desde los picos de los Andes hasta los desiertos de África, coleccionando
+            momentos
+            que definen la diversidad y majestuosidad de nuestro planeta. Si buscas autenticidad y una perspectiva
+            única,
+            estás en el lugar correcto.</p>
+          <a href="#contacto">Colaboremos</a>
+        
+      </div>
+
+    </section>
+    <section id="servicios">
+      <h3>A qué me decico</h3>
+      <div class="contenedor col-big-12">
+        <article class="servicio col-big-4 contenedor col-small-12">
+          <i class="fa-solid fa-camera-retro col-big-2 hidden-small"></i>
+          <div class="texto col-big-10 col-small-12">
+            <h4>Fotografía de Paisajes</h4>
+            <p>Capturo la majestuosidad de la naturaleza: montañas, océanos y cielos estrellados. Trabajo con luz
+              natural
+              para evocar emociones profundas. ¿Necesitas imágenes impactantes para tu proyecto?</p>
+          </div>
+        </article>
+        <article class="servicio col-big-4 contenedor col-small-12">
+          <i class="fa-solid fa-plane-departure col-big-2 hidden-small"></i>
+          <div class="texto col-big-10 col-small-12">
+            <h4>Reportajes de Viajes</h4>
+            <p>Documento culturas, personas y momentos únicos alrededor del mundo. Cuento historias con cada
+              instantánea.
+              Ideal para blogs, revistas de viaje y material promocional.</p>
+          </div>
+        </article>
+        <article class="servicio col-big-4 contenedor col-small-12">
+          <i class="fa-solid fa-paintbrush col-big-2 hidden-small"></i>
+          <div class="texto col-big-10 col-small-12">
+            <h4>Edición y Retoque Digital</h4>
+            <p>Proceso tus imágenes con técnicas avanzadas para realzar el color, la composición y el ambiente,
+              manteniendo siempre la autenticidad del momento capturado. Resultados de alta calidad garantizados.</p>
+          </div>
+        </article>
+      </div>
+
+    </section>
+
+    <section id="portfolio">
+      <h3>Mis Últimas Expediciones</h3>
+      <div class="contenedor col-big-12">
+        <div class="col-big-4 col-small-12 imagen">
+          <picture>
+            <source srcset="img/galeria1_small.png" media="(max-width:924px)">
+            <source srcset="img/galeria1.png" media="(min-width:924px)">
+            <img src="img/galeria1.png" alt="">
+          </picture>
+        </div>
+        <div class="col-big-4 col-small-12 imagen">
+          <picture>
+            <source srcset="img/galeria2_small.png" media="(max-width:924px)">
+            <source srcset="img/galeria2.png" media="(min-width:924px)">
+            <img src="img/galeria2.png" alt="">
+          </picture>
+        </div>
+        <div class="col-big-4 col-small-12 imagen">
+          <picture>
+            <source srcset="img/galeria3_small.png" media="(max-width:924px)">
+            <source srcset="img/galeria3.png" media="(min-width:924px)">
+            <img src="img/galeria3.png" alt="">
+          </picture>
+        </div>
+        <div class="col-big-4 col-small-12 imagen">
+          <picture>
+            <source srcset="img/galeria4_small.png" media="(max-width:924px)">
+            <source srcset="img/galeria4.png" media="(min-width:924px)">
+            <img src="img/galeria4.png" alt="">
+          </picture>
+        </div>
+        <div class="col-big-4 col-small-12 imagen">
+          <picture>
+            <source srcset="img/galeria5_small.png" media="(max-width:924px)">
+            <source srcset="img/galeria5.png" media="(min-width:924px)">
+            <img src="img/galeria5.png" alt="">
+          </picture>
+        </div>
+        <div class="col-big-4 col-small-12 imagen">
+          <picture>
+            <source srcset="img/galeria6_small.png" media="(max-width:924px)">
+            <source srcset="img/galeria6.png" media="(min-width:924px)">
+            <img src="img/galeria6.png" alt="">
+          </picture>
+        </div>
+    </section>
+  </div>
+</body>
+
+</html>

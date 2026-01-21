@@ -1,0 +1,18 @@
+services:
+  frontend:
+    container_name: phpmyadmin
+    image: phpmyadmin
+    restart: always
+    ports:
+      - 82:80
+    volumes:
+      - datos_phpmyadmin:/var/www/html
+  db:
+    container_name: mariadb
+    image: mariadb 
+    restart: always
+    volumes:
+      - datos_mariadb:/var/lib/mysql
+volumes:
+  datos_phpmyadmin:
+  datos_mariadb:
