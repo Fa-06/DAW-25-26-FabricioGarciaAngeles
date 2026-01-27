@@ -1,0 +1,8 @@
+services:
+  frontend:
+    container_name: ejercicio1-apache
+    build: .
+    restart: always
+    ports:
+      - 81:80  
+

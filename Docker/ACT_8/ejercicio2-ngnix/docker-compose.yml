@@ -1,0 +1,8 @@
+services:
+  frontend:
+    container_name: ejercicio2-nginx
+    build: .
+    restart: always
+    ports:
+      - 82:80  
+
